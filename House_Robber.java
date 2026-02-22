@@ -42,17 +42,16 @@ public class House_Robber {
     public static int fastest(int arr[]){
         int prev1 = arr[0];
         int prev2 = 0;
-        int curr = arr[0];
         for(int i=1;i<arr.length;i++){
             int take = arr[i];
             if(i>1){
                 take+=prev2;
             }
             int nottake = 0 + prev1;
-            curr = Math.max(take, nottake);
+            int curr = Math.max(take, nottake);
             prev2 = prev1;
             prev1 = curr;
         }
-        return curr;
+        return prev1;
     }
 }
