@@ -6,6 +6,7 @@ public class House_Robber {
         int dp[] = new int[nums.length];
         Arrays.fill(dp, -1);
         System.out.println("Memo: " + memo(nums.length-1, nums, dp));
+        Arrays.fill(dp, -1);
         System.out.println("Tabu: " + tabu(nums, dp));
         System.out.println("Fastest: " + fastest(nums));
     }
@@ -41,7 +42,7 @@ public class House_Robber {
     public static int fastest(int arr[]){
         int prev1 = arr[0];
         int prev2 = 0;
-        int curr = -1;
+        int curr = arr[0];
         for(int i=1;i<arr.length;i++){
             int take = arr[i];
             if(i>1){
