@@ -2,7 +2,9 @@ package DPonSubsequences;
 
 import java.util.Arrays;
 
-public class PartitionArrayIntoTwoArraystoMinimizeSumDifference {
+//Given an array arr[]  containing non-negative integers, the task is to divide it into two sets set1 and set2 such that the absolute difference between their sums is minimum and find the minimum difference.
+
+public class MinimumSumPartition {
     public static void main(String args[]){
 
         int nums[] = {1, 6, 11, 5};
