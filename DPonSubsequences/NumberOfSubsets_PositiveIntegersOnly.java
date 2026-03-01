@@ -2,6 +2,13 @@ package DPonSubsequences;
 
 import java.util.*;
 
+/*Given an array of positive integers and an integer target,
+count the total number of subsets whose sum is equal to the target.
+
+Each element in the array can be used at most once.
+
+Return the number of such subsets. */
+
 public class NumberOfSubsets_PositiveIntegersOnly {
     public static void main(String args[]){
         int arr[] = {5, 2, 3, 10, 6, 8};
